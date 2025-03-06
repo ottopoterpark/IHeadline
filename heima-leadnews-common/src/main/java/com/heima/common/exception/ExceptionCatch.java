@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * @author unique
+ */
 @ControllerAdvice  //控制器增强类
 @Slf4j
 public class ExceptionCatch {

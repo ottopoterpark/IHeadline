@@ -3,24 +3,40 @@ package com.heima.model.common.dtos;
 import com.alibaba.fastjson.JSON;
 import com.heima.model.common.enums.AppHttpCodeEnum;
 
+import lombok.Data;
+
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 通用的结果返回类
  * @param <T>
+ * @author unique
  */
+@Data
 public class ResponseResult<T> implements Serializable {
 
+    /**
+     * 主机
+     */
     private String host;
 
+    /**
+     * 状态码
+     */
+    @NotNull
     private Integer code;
 
+    /**
+     * 错误信息
+     */
     private String errorMessage;
 
+    /**
+     * 数据
+     */
     private T data;
 
     public ResponseResult() {
@@ -100,39 +116,6 @@ public class ResponseResult<T> implements Serializable {
         this.data = data;
         return this;
     }
-
-    public Integer getCode() {
-        return code;
-    }
-
-    public void setCode(Integer code) {
-        this.code = code;
-    }
-
-    public String getErrorMessage() {
-        return errorMessage;
-    }
-
-    public void setErrorMessage(String errorMessage) {
-        this.errorMessage = errorMessage;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public String getHost() {
-        return host;
-    }
-
-    public void setHost(String host) {
-        this.host = host;
-    }
-
 
     public static void main(String[] args) {
         //前置

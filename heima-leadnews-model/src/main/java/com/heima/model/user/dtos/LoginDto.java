@@ -1,21 +1,25 @@
 package com.heima.model.user.dtos;
 
-
-import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
+
+/**
+ * 用户登录Dto
+ * @author unique
+ */
 @Data
 public class LoginDto {
 
     /**
      * 手机号
      */
-    @ApiModelProperty(value = "手机号",required = true)
+    @NotNull
     private String phone;
 
     /**
      * 密码
      */
-    @ApiModelProperty(value = "密码",required = true)
+    @NotNull
     private String password;
 }

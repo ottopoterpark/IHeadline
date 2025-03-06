@@ -6,6 +6,9 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 import java.util.*;
 
+/**
+ * @author unique
+ */
 public class AppJwtUtil {
 
     // TOKEN的有效期一天（S）

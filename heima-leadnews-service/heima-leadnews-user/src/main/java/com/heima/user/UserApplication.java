@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 
+/**
+ * @author unique
+ */
 @SpringBootApplication
 @EnableDiscoveryClient
 @MapperScan("com.heima.user.mapper")

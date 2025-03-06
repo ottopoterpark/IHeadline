@@ -1,5 +1,9 @@
 package com.heima.model.common.enums;
 
+/**
+ * @author unique
+ */
+
 public enum AppHttpCodeEnum {
 
     // 成功段固定为200
